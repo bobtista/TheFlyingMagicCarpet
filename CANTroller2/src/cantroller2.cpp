@@ -141,7 +141,7 @@ void setup() {  // Setup just configures pins (and detects touchscreen type)
         printf ("  Sensor responding properly\n");
     }
 
-    temp_init();  // Onewire bus and temp sensors
+    init_temperature_sensors();  // Onewire bus and temp sensors
     
     // xTaskCreatePinnedToCore ( codeForTask1, "Task_1", 1000, NULL, 1, &Task1, 0);
     // if (ctrl == HOTRC) {  // Look for evidence of a normal (not failsafe) hotrc signal. If it's not yet powered on, we will ignore its spurious poweron ignition event
